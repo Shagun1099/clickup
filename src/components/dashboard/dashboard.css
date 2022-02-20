@@ -1,0 +1,83 @@
+.dasboard {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+}
+.dashboard__chartContainer {
+  width: 75%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  height: 470px;
+  border: 3px solid #d2d2d2;
+  padding: 20px;
+}
+.dashboard__chartContainer > h2,
+.dashboard__chartContainer > p,
+.dashboard__tableContainer > h2,
+.dashboard__tableContainer > p {
+  margin: 0 0;
+  padding: 0 0;
+}
+.dashboard__tableContainer {
+  width: 75%;
+  margin-bottom: 100px;
+  border: 3px solid #d2d2d2;
+  padding: 20px;
+}
+.dashboard__table {
+  border-spacing: 0px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+thead.dashboard__tableHead {
+  font-weight: 600;
+  background: #f2f2f2;
+  height: 40px;
+}
+.dashboard__tableHead > td {
+  padding: 5px 15px;
+}
+.dashboard__tableRow > td {
+  padding: 3px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.dashboard__tableRow > td > p,
+.dashboard__tableRow > td > div p {
+  line-height: 5px;
+}
+.bar {
+  height: 3px;
+  background: #00dc00;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .dashboard__chartContainer {
+    width: 88%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .dashboard__tableContainer {
+    width: 88%;
+    padding: 10px;
+  }
+  .dashboard__tableContainer {
+    width: 95%;
+    margin-bottom: 50px;
+    border: none;
+    padding: 0px;
+  }
+  .dashboard__tableHead > td {
+    padding: 5px 2px;
+    font-size: 12px;
+  }
+  .dashboard__tableRow > td {
+    padding: 3px 1px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,59 @@
+.projectRelease {
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: #f8f8f8;
+}
+.projects__container {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.projects__typeContainer {
+  margin: 0 10px;
+  width: 30%;
+}
+
+.project__typeCard {
+  height: 50px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+}
+.projects__count {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 1px solid lightgray;
+  color: lightgray;
+  margin-left: 5px;
+}
+
+.task__card {
+  min-height: 120px;
+  max-height: 140px;
+  border-radius: 10px;
+  box-shadow: 2px 6px 12px #e9e9e9;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .projects__container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .projects__typeContainer {
+    margin: 20px auto;
+    width: 90%;
+  }
+}
